@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
     android:background="@color/main_green">
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/toolbar_profile"
+        android:id="@+id/toolbar_profileButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
         android:src="@drawable/baseline_profile_24" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AndroidQuiz"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/golden"
+        />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/toolbar_logoutButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:src="@drawable/baseline_logout_24" />
+
+
+</androidx.appcompat.widget.Toolbar>
