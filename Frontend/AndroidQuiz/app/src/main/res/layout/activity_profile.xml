@@ -209,8 +209,8 @@
         android:layout_height="match_parent"
         android:gravity="bottom|center">
         <include
-            android:id="@+id/gamebar"
-            layout="@layout/gamebar" />
+            android:id="@+id/menubar"
+            layout="@layout/menubar" />
     </LinearLayout>
 
 

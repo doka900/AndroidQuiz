@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.androidquiz.activities.HomeActivity;
+import com.example.androidquiz.activities.KzzActivity;
 import com.example.androidquiz.activities.LoginActivity;
 import com.example.androidquiz.activities.ProfileActivity;
 
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         kzzPageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, KzzActivity.class);
             startActivity(intent);
         });
     }

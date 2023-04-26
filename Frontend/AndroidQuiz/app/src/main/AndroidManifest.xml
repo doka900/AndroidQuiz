@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AndroidQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".activities.KzzActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.HomeActivity"
             android:exported="false" />
         <activity

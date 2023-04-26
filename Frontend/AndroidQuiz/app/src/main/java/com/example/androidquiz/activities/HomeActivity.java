@@ -16,17 +16,17 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        androidx.appcompat.widget.Toolbar gamebar = findViewById(R.id.gamebar);
-        setSupportActionBar(gamebar);
+        androidx.appcompat.widget.Toolbar menubar = findViewById(R.id.menubar);
+        setSupportActionBar(menubar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        ImageView play = findViewById(R.id.gamebar_playButton);
-        ImageView rangList = findViewById(R.id.gamebar_ranglistButton);
-        ImageView friends = findViewById(R.id.gamebar_friendsButton);
+        ImageView play = findViewById(R.id.menubar_playButton);
+        ImageView rangList = findViewById(R.id.menubar_ranglistButton);
+        ImageView friends = findViewById(R.id.menubar_friendsButton);
         ImageView profile = findViewById(R.id.toolbar_profileButton);
         ImageView logout = findViewById(R.id.toolbar_logoutButton);
 

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.HomeActivity"
@@ -10,14 +11,95 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Play Points:"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="25sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="5 / 5"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="25sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/activity_home_playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="PLAY"
+            android:textColor="@color/golden"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="uses points"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/activity_home_playfriendsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="PLAY with friends"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="doesn't use points"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center">
         <include
-            android:id="@+id/gamebar"
-            layout="@layout/gamebar" />
+            android:id="@+id/menubar"
+            layout="@layout/menubar" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
