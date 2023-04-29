@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.androidquiz.activities.HomeActivity;
-import com.example.androidquiz.activities.KzzActivity;
+import com.example.androidquiz.activities.KpkActivity;
 import com.example.androidquiz.activities.LoginActivity;
+import com.example.androidquiz.activities.MojBrojActivity;
 import com.example.androidquiz.activities.ProfileActivity;
+import com.example.androidquiz.activities.SkockoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     Button homepageButton;
     Button profilePageButton;
     Button kzzPageButton;
+    Button skockoPageButton;
+    Button mojBrojPageButton;
+    Button kpkPageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         homepageButton = findViewById(R.id.activity_main_homepageButton);
         profilePageButton = findViewById(R.id.activity_main_profilePageButton);
         kzzPageButton = findViewById(R.id.activity_main_kzzPageButton);
+        skockoPageButton = findViewById(R.id.activity_main_skockoPageButton);
+        mojBrojPageButton = findViewById(R.id.activity_main_mojBrojPageButton);
+        kpkPageButton = findViewById(R.id.activity_main_KPKPageButton);
 
         loginPageButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
@@ -47,8 +55,16 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
             startActivity(intent);
         });
-        kzzPageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, KzzActivity.class);
+        skockoPageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SkockoActivity.class);
+            startActivity(intent);
+        });
+        mojBrojPageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MojBrojActivity.class);
+            startActivity(intent);
+        });
+        kpkPageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, KpkActivity.class);
             startActivity(intent);
         });
     }

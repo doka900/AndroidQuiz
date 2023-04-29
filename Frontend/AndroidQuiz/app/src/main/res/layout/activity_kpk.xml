@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.KpkActivity"
+    android:background="@color/light_gray">
+    <include
+        android:id="@+id/resultbar"
+        layout="@layout/resultbar" />
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Moj Broj"
+            android:layout_marginTop="55dp"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="25sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="70 sec"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/title"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/korak1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak2"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak3"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/korak2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak3"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak4"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/korak3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak4"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak5"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/korak4"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak5"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak6"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/korak5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak6"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/korak7"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:layout_below="@+id/korak6"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="korak7"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kpk_answer"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/light_gray"
+            android:layout_below="@+id/korak7">
+            <EditText
+                android:id="@+id/kpk_answerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="text"
+                android:textColor="@color/golden"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kpk_answer">
+            <Button
+                android:id="@+id/mojBroj_accept_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="ACCEPT"
+                android:textSize="25sp"
+                android:textColor="@color/golden"/>
+            <Button
+                android:id="@+id/mojBroj_delete_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="SKIP"
+                android:textSize="25sp"
+                android:textColor="@color/golden"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center">
+        <include
+            android:id="@+id/gamebar"
+            layout="@layout/gamebar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
