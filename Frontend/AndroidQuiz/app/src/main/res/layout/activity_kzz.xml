@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.KzzActivity">
+    <include
+        android:id="@+id/resultbar"
+        layout="@layout/resultbar" />
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="Ko zna zna"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="25sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kzz_question"
+            android:layout_centerHorizontal="true"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="@color/dark_gray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="This is a question for this round, u can answer it below"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/golden"
+                android:textSize="25sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/kzz_answer1"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignLeft="@id/kzz_question"
+            android:layout_below="@id/kzz_question"
+            android:text="Answer"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/kzz_answer2"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_alignRight="@id/kzz_question"
+            android:layout_below="@id/kzz_question"
+            android:layout_marginTop="30dp"
+            android:text="Answer"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/kzz_answer3"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/kzz_question"
+            android:layout_below="@id/kzz_answer1"
+            android:text="Answer"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/kzz_answer4"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_alignRight="@id/kzz_question"
+            android:layout_below="@id/kzz_answer2"
+            android:layout_marginTop="10dp"
+            android:text="Answer"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center">
+        <include
+            android:id="@+id/gamebar"
+            layout="@layout/gamebar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

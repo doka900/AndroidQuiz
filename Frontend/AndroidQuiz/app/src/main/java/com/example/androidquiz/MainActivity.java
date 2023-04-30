@@ -19,10 +19,15 @@ public class MainActivity extends AppCompatActivity {
     Button homepageButton;
     Button profilePageButton;
     Button kzzPageButton;
+<<<<<<< Updated upstream
     Button skockoPageButton;
     Button mojBrojPageButton;
     Button kpkPageButton;
 
+=======
+    Button asocijacijePageButton;
+    Button spojnicePageButton;
+>>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,9 +44,14 @@ public class MainActivity extends AppCompatActivity {
         homepageButton = findViewById(R.id.activity_main_homepageButton);
         profilePageButton = findViewById(R.id.activity_main_profilePageButton);
         kzzPageButton = findViewById(R.id.activity_main_kzzPageButton);
+<<<<<<< Updated upstream
         skockoPageButton = findViewById(R.id.activity_main_skockoPageButton);
         mojBrojPageButton = findViewById(R.id.activity_main_mojBrojPageButton);
         kpkPageButton = findViewById(R.id.activity_main_KPKPageButton);
+=======
+        asocijacijePageButton = findViewById(R.id.activity_main_asocijacijePageButton);
+        spojnicePageButton = findViewById(R.id.activity_main_spojnicePageButton);
+>>>>>>> Stashed changes
 
         loginPageButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
