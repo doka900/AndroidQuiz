@@ -12,7 +12,6 @@
         android:theme="@style/Theme.AndroidQuiz"
         tools:targetApi="31">
         <activity
-<<<<<<< Updated upstream
             android:name=".activities.KpkActivity"
             android:exported="false" />
         <activity
@@ -20,7 +19,8 @@
             android:exported="false" />
         <activity
             android:name=".activities.SkockoActivity"
-=======
+            android:exported="false" />
+        <activity
             android:name=".activities.AsocijacijeActivity"
             android:exported="false" />
         <activity
@@ -28,7 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".activities.KzzActivity"
->>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".activities.HomeActivity"

@@ -6,28 +6,31 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.androidquiz.activities.AsocijacijeActivity;
 import com.example.androidquiz.activities.HomeActivity;
 import com.example.androidquiz.activities.KpkActivity;
+import com.example.androidquiz.activities.KzzActivity;
 import com.example.androidquiz.activities.LoginActivity;
 import com.example.androidquiz.activities.MojBrojActivity;
 import com.example.androidquiz.activities.ProfileActivity;
 import com.example.androidquiz.activities.SkockoActivity;
+import com.example.androidquiz.activities.SpojniceActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     Button loginPageButton;
     Button homepageButton;
     Button profilePageButton;
-    Button kzzPageButton;
-<<<<<<< Updated upstream
+
+
     Button skockoPageButton;
     Button mojBrojPageButton;
     Button kpkPageButton;
 
-=======
+    Button kzzPageButton;
     Button asocijacijePageButton;
     Button spojnicePageButton;
->>>>>>> Stashed changes
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,15 +46,16 @@ public class MainActivity extends AppCompatActivity {
         loginPageButton = findViewById(R.id.activity_main_loginPageButton);
         homepageButton = findViewById(R.id.activity_main_homepageButton);
         profilePageButton = findViewById(R.id.activity_main_profilePageButton);
-        kzzPageButton = findViewById(R.id.activity_main_kzzPageButton);
-<<<<<<< Updated upstream
+
+
         skockoPageButton = findViewById(R.id.activity_main_skockoPageButton);
         mojBrojPageButton = findViewById(R.id.activity_main_mojBrojPageButton);
         kpkPageButton = findViewById(R.id.activity_main_KPKPageButton);
-=======
+
+        kzzPageButton = findViewById(R.id.activity_main_kzzPageButton);
         asocijacijePageButton = findViewById(R.id.activity_main_asocijacijePageButton);
         spojnicePageButton = findViewById(R.id.activity_main_spojnicePageButton);
->>>>>>> Stashed changes
+
 
         loginPageButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
@@ -77,6 +81,19 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, KpkActivity.class);
             startActivity(intent);
         });
+        asocijacijePageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AsocijacijeActivity.class);
+            startActivity(intent);
+        });
+        spojnicePageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SpojniceActivity.class);
+            startActivity(intent);
+        });
+        kzzPageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, KzzActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     @Override
