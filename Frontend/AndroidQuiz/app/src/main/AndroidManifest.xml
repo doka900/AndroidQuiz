@@ -21,15 +21,6 @@
             android:name=".activities.SkockoActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AsocijacijeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.SpojniceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.KzzActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.HomeActivity"
             android:exported="false" />
         <activity
