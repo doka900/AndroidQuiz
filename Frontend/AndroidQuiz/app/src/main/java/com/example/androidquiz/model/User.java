@@ -3,6 +3,8 @@ package com.example.androidquiz.model;
 public class User {
     String username, password, email;
 
+    public User(){}
+
     public User(String username, String password, String email) {
         this.username = username;
         this.password = password;

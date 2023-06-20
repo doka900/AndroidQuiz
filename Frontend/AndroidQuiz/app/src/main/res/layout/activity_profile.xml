@@ -20,6 +20,7 @@
         android:paddingTop="60dp">
 
         <TextView
+            android:id="@+id/activity_profile_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -81,13 +82,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/activity_profile_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
-                android:text="0email0"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="5dp"
+                android:layout_marginTop="5dp"
+                android:text="0email0"
                 android:textAlignment="center"
                 android:textColor="@color/golden"
                 android:textSize="20sp" />
@@ -122,13 +124,14 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/activity_profile_games"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
-                    android:text="0num0"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0num0"
                     android:textAlignment="center"
                     android:textColor="@color/golden"
                     android:textSize="20sp" />
@@ -164,13 +167,14 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/activity_profile_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
-                    android:text="0num0"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0num0"
                     android:textAlignment="center"
                     android:textColor="@color/golden"
                     android:textSize="20sp" />
@@ -191,9 +195,9 @@
             android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activity_profile_history"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
 
         </androidx.cardview.widget.CardView>
 
