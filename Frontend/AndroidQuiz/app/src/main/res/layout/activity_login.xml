@@ -67,6 +67,13 @@
             android:layout_marginTop="10dp"
             android:text="Login"
             android:textSize="15sp" />
+        <Button
+            android:id="@+id/activity_login_guestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Play as a guest"
+            android:textSize="15sp" />
 
     </LinearLayout>
     </androidx.cardview.widget.CardView>

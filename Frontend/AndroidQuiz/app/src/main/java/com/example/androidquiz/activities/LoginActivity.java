@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText password;
     Button loginButton;
     Button registerPageButton;
+    Button guestButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,11 +34,17 @@ public class LoginActivity extends AppCompatActivity {
 
         loginButton = findViewById(R.id.activity_login_loginButton);
         registerPageButton = findViewById(R.id.activity_login_registerButton);
+        guestButton = findViewById(R.id.activity_login_guestButton);
 
         loginButton.setOnClickListener(v -> login());
 
         registerPageButton.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        });
+
+        guestButton.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, GuestActivity.class);
             startActivity(intent);
         });
 
