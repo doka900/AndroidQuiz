@@ -98,6 +98,10 @@ public class ProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
             startActivity(intent);
         });
+        friends.setOnClickListener(view -> {
+            Intent intent = new Intent(ProfileActivity.this, FriendsActivity.class);
+            startActivity(intent);
+        });
         profile.setOnClickListener(view -> {
             Intent intent = new Intent(ProfileActivity.this, ProfileActivity.class);
             startActivity(intent);

@@ -9,12 +9,12 @@ import android.widget.ImageView;
 import com.example.androidquiz.MainActivity;
 import com.example.androidquiz.R;
 
-public class HomeActivity extends AppCompatActivity {
+public class FriendsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_friends);
 
         androidx.appcompat.widget.Toolbar menubar = findViewById(R.id.menubar);
         setSupportActionBar(menubar);
@@ -31,19 +31,19 @@ public class HomeActivity extends AppCompatActivity {
         ImageView logout = findViewById(R.id.toolbar_logoutButton);
 
         play.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+            Intent intent = new Intent(FriendsActivity.this, HomeActivity.class);
             startActivity(intent);
         });
         friends.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeActivity.this, FriendsActivity.class);
+            Intent intent = new Intent(FriendsActivity.this, FriendsActivity.class);
             startActivity(intent);
         });
         profile.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(FriendsActivity.this, ProfileActivity.class);
             startActivity(intent);
         });
         logout.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+            Intent intent = new Intent(FriendsActivity.this, MainActivity.class);
             startActivity(intent);
         });
     }

@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.androidquiz.activities.AsocijacijeActivity;
 import com.example.androidquiz.activities.HomeActivity;
 import com.example.androidquiz.activities.KpkActivity;
+import com.example.androidquiz.activities.KzzActivity;
 import com.example.androidquiz.activities.LoginActivity;
 import com.example.androidquiz.activities.MojBrojActivity;
 import com.example.androidquiz.activities.ProfileActivity;
 import com.example.androidquiz.activities.SkockoActivity;
+import com.example.androidquiz.activities.SpojniceActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     Button homepageButton;
     Button profilePageButton;
     Button kzzPageButton;
+    Button spojnicePageButton;
+    Button asocijacijePageButton;
     Button skockoPageButton;
     Button mojBrojPageButton;
     Button kpkPageButton;
@@ -39,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         homepageButton = findViewById(R.id.activity_main_homepageButton);
         profilePageButton = findViewById(R.id.activity_main_profilePageButton);
         kzzPageButton = findViewById(R.id.activity_main_kzzPageButton);
+        asocijacijePageButton = findViewById(R.id.activity_main_asocijacijePageButton);
+        spojnicePageButton = findViewById(R.id.activity_main_spojnicePageButton);
         skockoPageButton = findViewById(R.id.activity_main_skockoPageButton);
         mojBrojPageButton = findViewById(R.id.activity_main_mojBrojPageButton);
         kpkPageButton = findViewById(R.id.activity_main_KPKPageButton);
@@ -65,6 +72,18 @@ public class MainActivity extends AppCompatActivity {
         });
         kpkPageButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, KpkActivity.class);
+            startActivity(intent);
+        });
+        kzzPageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, KzzActivity.class);
+            startActivity(intent);
+        });
+        asocijacijePageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AsocijacijeActivity.class);
+            startActivity(intent);
+        });
+        spojnicePageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SpojniceActivity.class);
             startActivity(intent);
         });
     }
