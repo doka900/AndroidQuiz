@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/friend_item_profilepic"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_item_name"
+        android:textSize="20dp"
+        android:layout_toEndOf="@id/friend_item_profilepic"
+        tools:text="Name"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_item_rang"
+        android:textSize="15dp"
+        android:layout_toEndOf="@id/friend_item_profilepic"
+        android:layout_below="@id/friend_item_name"
+        tools:text="Rang"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_item_zvezde"
+        android:textSize="15dp"
+        android:layout_toEndOf="@id/friend_item_rang"
+        android:layout_below="@id/friend_item_name"
+        tools:text="Zvezde"
+        />
+
+</RelativeLayout>
